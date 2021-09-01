@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url("../fonts/CenturyGothic-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Italic";
+  src: url("../fonts/CenturyGothic-Italic.woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.dior__wrapper {
+  /*    ШИРИНА КОНТЕНТА    */
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-shadow: 0 0 0.5px #000;
+  overflow-x: hidden;
+}
+
+input, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.logotip {
+  background-color: #fff;
+  padding: 17px 0;
+}
+
+.logotip__title {
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  line-height: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .logotip__title {
+    font-size: -webkit-calc(96px + 40.8 * ((100vw - 320px) / 750));
+    font-size: calc(96px + 40.8 * ((100vw - 320px) / 750));
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .logotip__title {
+    font-size: -webkit-calc(96px + 24 * (100vw / 750));
+    font-size: calc(96px + 24 * (100vw / 750));
+  }
+}
+
+.ilustration__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100%;
+}
+
+.edito {
+  background-color: #fff;
+}
+
+.edito__wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.edito__title {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.edito__text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.3;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.edito__button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  line-height: 1;
+  text-transform: uppercase;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  font-family: "Century Gothic";
+  padding: 18px 16px;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: 1px solid #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-bottom: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.edito__button:hover {
+  background-color: #fcfcfc;
+}
+
+.edito__button:active {
+  -webkit-transform: scale(0.96);
+      -ms-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.push__first {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.push__second {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.push__second .push__order {
+  margin: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+.push__thirty {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.push__left {
+  width: 100%;
+}
+
+.push__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.push__right {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Century Gothic";
+  width: 80%;
+  margin: 0 auto;
+}
+
+.push__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 auto 13px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.push__text {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  text-align: left;
+}
+
+.push__order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0px 0px 0.7px #000;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
+  cursor: pointer;
+  background: transparent;
+  padding: 18px 16px;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  border: 1px solid #000;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 auto 0 0;
+  text-align: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.push__order svg {
+  fill: #000;
+}
+
+.push__order:hover {
+  background-color: #fcfcfc;
+}
+
+.push__order:active {
+  -webkit-transform: scale(0.96);
+      -ms-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.push__order-text {
+  margin: 0;
+  padding: 0;
+}
+
+.push__description {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "Century Gothic Italic";
+  margin-left: auto;
+  text-align: right;
+}
+
+.push__author {
+  text-align: right;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  margin-left: auto;
+  line-height: 1.3;
+  font-size: 21px;
+}
+
+.titre {
+  background-color: #fff;
+  padding: 35px 0 50px;
+}
+
+.titre__title {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: "Century Gothic";
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 23px;
+  line-height: 1;
+  padding: 0;
+}
+
+.titre__image-container {
+  width: 100%;
+}
+
+.titre__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .logotip__title {
+    font-size: 98px;
+    line-height: 0.8;
+  }
+  .edito__wrapper {
+    width: 50%;
+  }
+  .edito__title {
+    font-size: 26px;
+  }
+  .edito__text {
+    font-size: 15px;
+  }
+  .push__first {
+    display: block;
+    background: url("../images/miss-dior/photo-1-mobile.jpg") no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    width: 100%;
+    padding: 80px 0 60px 0;
+    height: 80vh;
+    margin-bottom: 40px;
+  }
+  .push__first .push__left {
+    display: none;
+  }
+  .push__first .push__right {
+    background: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .push__first .push__title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .push__first .push__text {
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .push__first .push__order {
+    margin: 0;
+    margin-top: auto;
+    background-color: #fff;
+  }
+  .push__first .push__order:hover {
+    background-color: #e6e6e6;
+  }
+  .push__second {
+    display: block;
+    background: url("../images/miss-dior/photo-2-mobile.jpg") no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    width: 100%;
+    padding: 80px 0 60px 0;
+    height: 75vh;
+    margin-bottom: 40px;
+  }
+  .push__second .push__left {
+    display: none;
+  }
+  .push__second .push__right {
+    background: transparent;
+    height: 100%;
+    margin-top: auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .push__second .push__description {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .push__second .push__author {
+    font-size: 19px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 200px;
+  }
+  .push__second .push__order {
+    margin: 0;
+    background-color: #fff;
+  }
+  .push__second .push__order:hover {
+    background-color: #e6e6e6;
+  }
+  .push__thirty {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .push__thirty .push__left {
+    height: 60vh;
+  }
+  .push__thirty .push__title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 32px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+  }
+  .push__thirty .push__text {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .push__thirty .push__order {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .titre__title {
+    font-size: 32px;
+  }
+  .titre__image-container {
+    min-height: 300px;
+  }
+  .titre__image {
+    width: 100%;
+    min-height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .edito__wrapper {
+    width: 90%;
+  }
+}
