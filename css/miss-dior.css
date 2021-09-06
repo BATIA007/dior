@@ -26,15 +26,9 @@
   margin: 0 auto;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  color: #000;
-  text-shadow: 0 0 0.5px #000;
-  overflow-x: hidden;
-}
-
-input, button {
+.logotip button,
+.edito button,
+.push button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -43,30 +37,27 @@ input, button {
 .logotip {
   background-color: #fff;
   padding: 17px 0;
+  color: #000 !important;
+  text-shadow: 0 0 0.5px #000;
+  padding:20px 0;
 }
 
 .logotip__title {
-  text-align: center;
+  text-align: center !important;
   font-weight: 500;
+  font-size: 120px !important;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto !important;
   padding: 0;
   outline: 0;
-  line-height: 1;
+  line-height: 1 !important;
+  color: #000 !important;
+  
 }
 
-@media screen and (max-width: 767px) {
-  .logotip__title {
-    font-size: -webkit-calc(96px + 40.8 * ((100vw - 320px) / 750));
-    font-size: calc(96px + 40.8 * ((100vw - 320px) / 750));
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .logotip__title {
-    font-size: -webkit-calc(96px + 24 * (100vw / 750));
-    font-size: calc(96px + 24 * (100vw / 750));
-  }
+.ilustration {
+  color: #000;
+  text-shadow: 0 0 0.5px #000;
 }
 
 .ilustration__image {
@@ -78,6 +69,8 @@ input, button {
 
 .edito {
   background-color: #fff;
+  color: #000 !important;
+  text-shadow: 0 0 0.5px #000;
 }
 
 .edito__wrapper {
@@ -93,6 +86,8 @@ input, button {
   font-style: normal;
   line-height: 1.2;
   text-transform: uppercase;
+  margin-top: 20px;
+  color: #000 !important;
 }
 
 .edito__text {
@@ -119,9 +114,9 @@ input, button {
           border-radius: 24px;
   border: 1px solid #000;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   margin-bottom: 40px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -130,13 +125,20 @@ input, button {
 }
 
 .edito__button:hover {
-  background-color: #fcfcfc;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .edito__button:active {
   -webkit-transform: scale(0.96);
       -ms-transform: scale(0.96);
           transform: scale(0.96);
+}
+
+.push {
+  color: #000 !important;
+  text-shadow: 0 0 0.5px #000;
+  background-color: #fff;
 }
 
 .push__first {
@@ -209,6 +211,7 @@ input, button {
   margin: 0 auto 13px 0;
   padding: 0;
   text-align: left;
+  color: #000 !important;
 }
 
 .push__text {
@@ -244,9 +247,9 @@ input, button {
   -webkit-border-radius: 24px;
           border-radius: 24px;
   border: 1px solid #000;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 1;
@@ -263,7 +266,8 @@ input, button {
 }
 
 .push__order:hover {
-  background-color: #fcfcfc;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .push__order:active {
@@ -273,7 +277,7 @@ input, button {
 }
 
 .push__order-text {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 
@@ -299,6 +303,8 @@ input, button {
 }
 
 .titre {
+  color: #000;
+  text-shadow: 0 0 0.5px #000;
   background-color: #fff;
   padding: 35px 0 50px;
 }
@@ -313,6 +319,7 @@ input, button {
   margin-bottom: 23px;
   line-height: 1;
   padding: 0;
+  color: #000 !important;
 }
 
 .titre__image-container {
@@ -327,7 +334,7 @@ input, button {
 
 @media screen and (max-width: 750px) {
   .logotip__title {
-    font-size: 98px;
+    font-size: 86px !important;
     line-height: 0.8;
   }
   .edito__wrapper {
@@ -338,6 +345,10 @@ input, button {
   }
   .edito__text {
     font-size: 15px;
+  }
+  .edito__button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
   }
   .push__first {
     display: block;
@@ -391,7 +402,8 @@ input, button {
     background-color: #fff;
   }
   .push__first .push__order:hover {
-    background-color: #e6e6e6;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
   }
   .push__second {
     display: block;
@@ -421,23 +433,24 @@ input, button {
   }
   .push__second .push__description {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto !important;
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
   }
   .push__second .push__author {
     font-size: 19px;
     line-height: 1.4;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 200px;
+    margin-bottom: 200px !important;
   }
   .push__second .push__order {
     margin: 0;
     background-color: #fff;
   }
   .push__second .push__order:hover {
-    background-color: #e6e6e6;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
   }
   .push__thirty {
     -ms-grid-columns: 1fr;
@@ -463,6 +476,10 @@ input, button {
   .push__thirty .push__order {
     margin: 0 auto;
     text-align: center;
+  }
+  .push__thirty .push__order:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
   }
   .titre__title {
     font-size: 32px;
